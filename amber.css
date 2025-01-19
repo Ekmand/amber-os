@@ -11,10 +11,11 @@ img {
     height: auto;
     margin-left: -25px;
     margin-bottom: -60px;
-    animation: float 3s ease infinite;
+    animation: fadeIn 3s ease, float 3s ease infinite;
 }
 
 .container {
+    animation: fadeIn 3s ease;
     padding: 30px 40px;
 }
 
@@ -79,5 +80,16 @@ p {
     }
     100% {
         transform: translateY(0px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        translateY: 0 -50px;
+        opacity: 0;
+    }
+    100% {
+        translate: 0 0px;
+        opacity: 1;
     }
 }
