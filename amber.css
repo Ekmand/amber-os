@@ -1,0 +1,84 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-image: url(background.png);
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-left: -25px;
+    margin-bottom: -60px;
+    animation: float 3s ease infinite;
+}
+
+.container {
+    padding: 30px 40px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: -10px;
+    filter: drop-shadow(0px 0px 4px #feb35f);
+    color: #feb35f;
+}
+
+p {
+    color: white;
+    font-size: 24px;
+}
+
+.normie {
+    font-size: 64px;
+    font-weight: 400;   
+    color: #fff;
+}
+
+.scratch {
+    transition: all 0.3s ease;
+    padding: 10px 30px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    color: #feb35f;
+    background: none;
+    border: 2px solid #feb35f;
+    border-radius: 50px;
+}
+
+.discord {
+    transition: all 0.3s ease;
+    padding: 10px 30px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    color: #000000;
+    border: 2px solid #feb35f;
+    background: #feb35f;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.scratch:hover {
+    background: #feb35f;
+    color: #000000;
+}
+
+.discord:hover {
+    background: none;
+    color: #feb35f;
+    border: 2px solid #feb35f;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
